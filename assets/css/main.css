@@ -935,6 +935,7 @@
 				margin: 0 auto;
 				border-radius: 100%;
 				box-shadow: 0 0 0 1.5em #ffffff;
+				max-width: 100%;
 			}
 
 			#main .avatar:before {
@@ -972,6 +973,9 @@
 		}
 
 /* Footer */
+	body.is-preload #footer {
+		color: rgba(255, 255, 255, 0.1);
+	}
 
 	#footer {
 		-moz-align-self: -moz-flex-end;
@@ -980,10 +984,16 @@
 		align-self: flex-end;
 		width: 100%;
 		padding: 1.5em 0 0 0;
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
 		text-align: center;
+		font-size: small;
+		transition: color linear 2s;
 	}
+
+		#footer:hover {
+			color: rgba(255, 255, 255, 0.75);
+		}
 
 		#footer .copyright {
 			margin: 0;
