@@ -924,6 +924,12 @@ button:disabled,
     width: 27em;
 }
 
+#main .main-avatar {
+    display: inline-block;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
 #main .avatar {
     position: relative;
     display: block;
